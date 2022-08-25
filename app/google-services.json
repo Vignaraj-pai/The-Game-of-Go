@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "510412264752",
+    "project_id": "the-game-of-go",
+    "storage_bucket": "the-game-of-go.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510412264752:android:d289fc401ca4228da2e4f5",
+        "android_client_info": {
+          "package_name": "com.example.thegameofgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510412264752-1rbehic187rn548bk1kpl2o4j8d7614u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI4EBoIfbt_YUawkEaMxyGH1i3Z5pObxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510412264752-1rbehic187rn548bk1kpl2o4j8d7614u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
