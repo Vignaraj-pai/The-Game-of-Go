@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">The Game of Go</string>
+    <string name="app_name">The_Game_of_Go</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
+    <string name="go_btn">GO !</string>
+    <string name="sign_up_link">Sign Up</string>
 </resources>
