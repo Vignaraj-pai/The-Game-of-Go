@@ -1,13 +1,10 @@
 package com.example.thegameofgo;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.thegameofgo.R;
+import android.os.Bundle;
 
-public class LoginActivity extends AppCompatActivity {
-
+public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
