@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnlineGameplayActivity"
+    android:background="@drawable/menu_bkg"
+    tools:ignore="HardcodedText" >
+
+    <!-- Menu Button -->
+    <ImageView
+        android:id="@+id/menu_btn"
+        android:contentDescription="Menu Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_btn" />
+
+    <!-- User Panel -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/gplay_panel_focused"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".8">
+        <!--        User Panel-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/user_pfp"
+                android:contentDescription="User Profile Picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                app:srcCompat="@drawable/user_pfp" />
+
+            <!-- User -->
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/game_profile"
+                android:drawableEnd="@drawable/white_player"
+                android:paddingStart="5dp"
+                android:paddingEnd="10dp"
+                android:text="You"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <!-- User Time left -->
+            <TextView
+                android:id="@+id/user_time_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="@string/user_time"
+                android:textColor="#FF4949"
+                android:textSize="15sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            >
+            <!--User Captures-->
+            <TextView
+                android:id="@+id/user_cptr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_cptr"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <!-- Pass btn -->
+            <Button
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="PASS"
+                android:textSize="20sp"
+                android:background="@drawable/pass_btn"
+                android:layout_marginStart="100dp"
+                android:paddingHorizontal="15dp"
+                android:textColor="@color/black"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--        Opponent Panel-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gplay_panel"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".8">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/opp_pfp"
+                android:contentDescription="Opponent Profile Picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/opponent_pfp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                />
+
+            <!-- Opponent -->
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:text="Opponent"
+                android:background="@drawable/game_profile"
+                android:paddingStart="5dp"
+                android:paddingEnd="10dp"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:drawableEnd="@drawable/black_user"
+                />
+
+            <!-- opponent time left -->
+            <TextView
+                android:id="@+id/opp_time_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/opp_time"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="20dp">
+
+            <!--Opponent Captures -->
+            <TextView
+                android:id="@+id/opp_cptr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opp_cptr"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
