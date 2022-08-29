@@ -26,12 +26,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/gplay_panel"
         android:orientation="vertical"
+        android:background="@drawable/gplay_panel_focused"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent=".8">
+
         <!--        User Panel-->
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"

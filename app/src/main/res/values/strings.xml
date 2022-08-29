@@ -8,8 +8,5 @@
     <string name="user_cptr">2 Captures</string>
     <string name="opp_time">03 : 56</string>
     <string name="opp_cptr">2 Captures</string>
-    <string name="nomatch">Password and confirm password do not match</string>
-    <string name="useralreadyexists">The username is already taken</string>
-    <string name="wrongdetails">The username or password is incorrect</string>
-    <string name="empty"> </string>
+    <string name="game_id">#randomID</string>
 </resources>
