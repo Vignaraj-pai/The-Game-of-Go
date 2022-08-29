@@ -1,10 +1,11 @@
 package com.example.thegameofgo;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.thegameofgo.R;
 
 public class LoginActivity extends AppCompatActivity {
 
