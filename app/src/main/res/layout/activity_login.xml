@@ -8,13 +8,13 @@
     android:background="@drawable/login_bkg_cropped">
 
     <EditText
-        android:id="@+id/email_login"
+        android:id="@+id/username_login"
         android:inputType="textEmailAddress"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_txt_bg"
-        android:hint="Email"
-        android:autofillHints="emailAddress"
+        android:hint="Username"
+        android:autofillHints="Username"
         android:textColorHint="#75B87575"
         android:textColor="#80000000"
         android:textAlignment="center"
@@ -46,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias=".5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_login"
+        app:layout_constraintTop_toBottomOf="@+id/username_login"
         app:layout_constraintVertical_bias="0"
         app:layout_constraintWidth_percent=".6" />
 
@@ -82,17 +82,38 @@
         app:layout_constraintVertical_bias="0" />
 
     <TextView
+        android:id="@+id/warning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFF0000"
+        android:textColorHint="#75B87575"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintVertical_bias="0.024"
+        app:layout_constraintWidth_percent=".6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Sign Up ?"
         android:textColor="@color/white"
         android:textSize="18sp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintVertical_bias="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
