@@ -23,6 +23,39 @@ public class SignupActivity extends AppCompatActivity {
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
+    public void customExitDialog() {
+        // creating custom dialog
+        final Dialog dialog = new Dialog(SignupActivity.this);
+
+        // setting content view to dialog
+        dialog.setContentView(R.layout.exit_dialog);
+
+        // getting reference of TextView
+        TextView dialogButtonYes = (TextView) dialog.findViewById(R.id.textViewYes);
+        TextView dialogButtonNo = (TextView) dialog.findViewById(R.id.textViewNo);
+
+        // click listener for No
+        dialogButtonNo.setOnClickListener(v -> {
+            // dismiss the dialog
+            dialog.dismiss();
+
+        });
+        // click listener for Yes
+        dialogButtonYes.setOnClickListener(v -> {
+            // dismiss the dialog and exit the exit
+            dialog.dismiss();
+            finish();
+        });
+
+        // show the logout dialog
+        dialog.show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        customExitDialog();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +71,7 @@ public class SignupActivity extends AppCompatActivity {
         Button alreadysignup = (Button) findViewById(R.id.alreadysigned);
 
         alreadysignup.setOnClickListener(v -> {
+            finish();
             Intent i = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(i);
         });
@@ -64,6 +98,7 @@ public class SignupActivity extends AppCompatActivity {
                             } else {
                                 player p = new player(sname, semail, spassword, 0, 0);
                                 newPlayerRef.set(p);
+                                finish();
                                 Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                                 startActivity(i);
                             }

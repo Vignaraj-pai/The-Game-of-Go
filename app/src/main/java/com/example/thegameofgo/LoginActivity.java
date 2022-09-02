@@ -25,6 +25,13 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
+    public void onBackPressed() {
+        finish();
+        Intent i = new Intent(getApplicationContext(), SignupActivity.class);
+        startActivity(i);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
@@ -57,6 +64,7 @@ public class LoginActivity extends AppCompatActivity {
                                 editor.putBoolean("isloggedin", true);
                                 editor.commit();
 
+                                finish();
                                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(i);
                             } else {
@@ -73,36 +81,5 @@ public class LoginActivity extends AppCompatActivity {
 
             login.setBackgroundResource(R.drawable.login_btn_bg);
         });
-    }
-
-    public class player{
-        private String username;
-        private String email;
-        private String password;
-        private int wins;
-        private int losses;
-
-        public player(String sname, String semail, String spassword, int swins, int slosses){
-            username = sname;
-            email = semail;
-            password = spassword;
-            wins = swins;
-            losses = slosses;
-        }
-        public String getUsername() {
-            return username;
-        }
-        public String getEmail() {
-            return email;
-        }
-        public String getPassword() {
-            return password;
-        }
-        public int getWins(){
-            return wins;
-        }
-        public int getLosses(){
-            return losses;
-        }
     }
 }

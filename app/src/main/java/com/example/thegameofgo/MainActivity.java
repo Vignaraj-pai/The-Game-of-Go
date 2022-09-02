@@ -1,5 +1,6 @@
 package com.example.thegameofgo;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -38,12 +39,11 @@ public class MainActivity extends AppCompatActivity {
             editor.putString("username", "Guest");
             editor.putBoolean("isloggedin", false);
             editor.commit();
-            Intent i = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(i);
+            this.recreate();
             dialog.dismiss();
         });
 
-        // show the exit dialog
+        // show the logout dialog
         dialog.show();
     }
 
@@ -71,13 +71,12 @@ public class MainActivity extends AppCompatActivity {
             finish();
         });
 
-        // show the exit dialog
+        // show the logout dialog
         dialog.show();
     }
 
     @Override
     public void onBackPressed() {
-        // calling the function
         customExitDialog();
     }
 
@@ -91,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         String logUsername = preferences.getString("username", "Guest");
 
         if(!isLoggedIn){
+            finish();
             Intent i = new Intent(getApplicationContext(), SignupActivity.class);
             startActivity(i);
         }
