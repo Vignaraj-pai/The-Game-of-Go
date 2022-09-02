@@ -30,7 +30,7 @@
         android:id="@+id/full_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Full Name"
+        android:hint="Username"
         android:inputType="text"
         android:background="@drawable/edit_txt_bg"
         android:layout_marginTop="30dp"
@@ -89,6 +89,25 @@
         app:layout_constraintVertical_bias="0"
         app:layout_constraintWidth_percent=".6" />
 
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFF0000"
+        android:textColorHint="#75B87575"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signRePass"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".6" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
@@ -105,19 +124,21 @@
         app:layout_constraintVertical_bias=".3"
         app:layout_constraintWidth_percent=".45" />
 
-    <TextView
+    <Button
         android:id="@+id/alreadysigned"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="15dp"
         android:background="@drawable/signed_btn"
         android:textColor="@color/white"
+        android:textAllCaps="false"
         android:text="Already have an account ?"
+        android:textSize="10dp"
         android:textAlignment="center"
         app:layout_constraintVertical_bias=".1"
         app:layout_constraintWidth_percent=".5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

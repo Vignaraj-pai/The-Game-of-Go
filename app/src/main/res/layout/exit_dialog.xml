@@ -17,7 +17,7 @@
             android:layout_marginTop="00dp"
             android:gravity="center"
             android:layout_marginBottom="40dp"
-            android:text="Exit The App ?"
+            android:text="Do you wish to quit?"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -42,7 +42,7 @@
                 android:background="@drawable/popup_btn"
                 android:elevation="8dp"
                 android:gravity="center"
-                android:text="NO"
+                android:text="No"
                 android:textColor="@color/white" />
 
             <!-- Yes Text View -->

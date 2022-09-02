@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         // calling the function
-        customExitDialog();
+        Intent i = new Intent(getApplicationContext(), SignupActivity.class);
+        startActivity(i);
+        // customExitDialog();
     }
 
     @Override

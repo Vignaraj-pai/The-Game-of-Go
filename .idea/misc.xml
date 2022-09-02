@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/IT150 Mini Project/The-Game-of-Go/app/src/main/res/drawable-v24/login_btn_bg_pressed.xml" value="0.2985" />
+        <entry key="..\:/IT150 Mini Project/The-Game-of-Go/app/src/main/res/drawable/gplay_panel.xml" value="0.196" />
+        <entry key="..\:/IT150 Mini Project/The-Game-of-Go/app/src/main/res/drawable/login_btn_bg.xml" value="0.2985" />
+        <entry key="..\:/IT150 Mini Project/The-Game-of-Go/app/src/main/res/layout/activity_offline_gameplay.xml" value="0.18802083333333333" />
+        <entry key="..\:/IT150 Mini Project/The-Game-of-Go/app/src/main/res/layout/activity_online_gameplay.xml" value="0.9166666666666666" />
+        <entry key="..\:/IT150 Mini Project/The-Game-of-Go/app/src/main/res/layout/activity_signup.xml" value="0.358695652173913" />
+        <entry key="..\:/IT150 Mini Project/The-Game-of-Go/app/src/main/res/layout/exit_dialog.xml" value="0.358695652173913" />
+        <entry key="..\:/IT150 Mini Project/The-Game-of-Go/app/src/main/res/layout/warning_differentpass.xml" value="0.358695652173913" />
         <entry key="..\:/IT_midsem_project/Dev/app/src/main/res/drawable/card_round.xml" value="0.1" />
         <entry key="..\:/IT_midsem_project/Dev/app/src/main/res/drawable/game_profile.xml" value="0.1" />
         <entry key="..\:/IT_midsem_project/Dev/app/src/main/res/drawable/gameplay_panel.xml" value="0.1" />
