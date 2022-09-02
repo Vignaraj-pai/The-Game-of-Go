@@ -101,12 +101,50 @@
         app:layout_constraintTop_toBottomOf="@+id/options"
         app:layout_constraintWidth_percent=".8" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Logged in as:"
+        android:textAlignment="center"
+        android:textColor="#FFFF0000"
+        android:textColorHint="#75B87575"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/how_to_play"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/LoginInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Guest"
+        android:textAlignment="center"
+        android:textColor="#FFFFFFFF"
+        android:textColorHint="#75B87575"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/how_to_play"
+        app:layout_constraintWidth_percent=".8" />
+
     <Button
         android:id="@+id/Exit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/exit_btn_bg"
-        android:text="Exit"
+        android:textAllCaps="false"
+        android:text="Logout"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:textSize="34sp"

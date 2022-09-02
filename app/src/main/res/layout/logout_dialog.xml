@@ -17,7 +17,7 @@
             android:layout_marginTop="00dp"
             android:gravity="center"
             android:layout_marginBottom="40dp"
-            android:text="Do you wish to exit?"
+            android:text="Do you wish to logout?"
             android:textSize="20sp"
             android:textStyle="bold" />
 
