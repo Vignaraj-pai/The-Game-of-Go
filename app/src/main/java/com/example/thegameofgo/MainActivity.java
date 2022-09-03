@@ -8,13 +8,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.w3c.dom.Text;
-
 public class MainActivity extends AppCompatActivity {
     public void customExitDialog() {
         // creating custom dialog
         final Dialog dialog = new Dialog(MainActivity.this);
-
+        dialog.getWindow().setBackgroundDrawableResource(R.color.trans);
         // setting content view to dialog
         dialog.setContentView(R.layout.exit_dialog);
 
@@ -78,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button set_btn = (Button) findViewById(R.id.options);
         Button exit = (Button) findViewById(R.id.Exit);
-        Button online_play = (Button) findViewById(R.id._2player);
-
+        Button online_play = (Button) findViewById(R.id.online_play);
+        Button offline_play = (Button) findViewById(R.id.offline_play);
         set_btn.setOnClickListener(v -> {
             Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
             startActivity(i);
@@ -87,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
         exit.setOnClickListener(view -> customExitDialog());
 
         online_play.setOnClickListener(view -> onlinePlayDialog());
+
+        offline_play.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(), OfflineGameplayActivity.class);
+            startActivity(i);
+        });
 
     }
 }

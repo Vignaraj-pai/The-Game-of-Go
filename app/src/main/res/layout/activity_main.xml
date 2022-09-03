@@ -21,17 +21,17 @@
         app:srcCompat="@drawable/go_head" />
 
     <Button
-        android:id="@+id/_1player"
+        android:id="@+id/offline_play"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/menu_btn_bg"
-        android:drawableEnd="@drawable/_1player"
+        android:drawableEnd="@drawable/_2player"
         android:paddingStart="40dp"
         android:paddingTop="10dp"
         android:paddingEnd="20dp"
         android:paddingBottom="10dp"
-        android:text="Single Player"
+        android:text="Play Local"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textSize="34sp"
@@ -58,11 +58,11 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/_2player"
+        app:layout_constraintTop_toBottomOf="@+id/online_play"
         app:layout_constraintWidth_percent=".8" />
 
     <Button
-        android:id="@+id/_2player"
+        android:id="@+id/online_play"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -72,13 +72,13 @@
         android:paddingEnd="20dp"
         android:drawableEnd="@drawable/_2player"
         android:background="@drawable/menu_btn_bg"
-        android:text="Two Player"
+        android:text="Play Online"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/_1player"
+        app:layout_constraintTop_toBottomOf="@+id/offline_play"
         app:layout_constraintWidth_percent=".8" />
 
     <Button

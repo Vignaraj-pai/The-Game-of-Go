@@ -2,6 +2,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/bottom_sheet_exit_linear"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -11,7 +12,8 @@
 
         <!-- exit the app textview -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="00dp"
@@ -39,6 +41,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:textSize="24sp"
                 android:background="@drawable/popup_btn"
                 android:elevation="8dp"
                 android:gravity="center"
@@ -55,8 +58,9 @@
                 android:layout_weight="1"
                 android:background="@drawable/popup_btn"
                 android:elevation="8dp"
+                android:textSize="24sp"
                 android:gravity="center"
-                android:text="Yes"
+                android:text="YES"
                 android:textColor="@color/white" />
 
         </LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_exit_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_round"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <!-- Game Paused Textview-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="00dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Game Paused"
+        android:textColor="#F6D6A4"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- Alert  Icon  ImageView -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <!-- Main Menu -->
+        <TextView
+            android:id="@+id/main_menu"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/popup_btn"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:text="Main Menu"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/home_icon" />
+
+        <!-- Resign -->
+        <TextView
+            android:id="@+id/resign"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/popup_btn"
+            android:paddingHorizontal="20dp"
+            android:elevation="8dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="Resign"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/resign" />
+
+        <!-- Back -->
+        <TextView
+            android:id="@+id/exit_game"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/popup_btn"
+            android:paddingHorizontal="20dp"
+            android:elevation="8dp"
+            android:textSize="20sp"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Exit Game"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/exit_icon" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_btn_bg"
+            android:text="Back"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

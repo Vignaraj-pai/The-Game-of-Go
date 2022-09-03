@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_exit_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_round"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <!-- exit the app textview -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="00dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="Return to Main Menu ?"
+        android:textColor="#F6D6A4"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="00dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="You will lose all progress"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Alert  Icon  ImageView -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- No  Text View -->
+        <TextView
+            android:id="@+id/no"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:background="@drawable/popup_btn"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:text="NO"
+            android:textColor="@color/white" />
+
+        <!-- Yes Text View -->
+        <TextView
+            android:id="@+id/yes"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/popup_btn"
+            android:elevation="8dp"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="YES"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
